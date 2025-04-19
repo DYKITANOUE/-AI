@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<!-- サイトの概要を記述しています -->
+	<meta name="description" content="業務改善システムのLPサイト" />
+	<!-- googlefont -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+	<!-- swiperの読み込み -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./css/style.min.css" />
+	split type
+	<script src="https://unpkg.com/split-type"></script>
+	<!-- GSAP CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+	<header class="p-header">
+		<div class="l-header_inner">
+			<h1 class="p-header_logo">
+				<a href=""><img src="./img/logo.png" alt="" /></a>
+			</h1>
+			<nav class="p-header_nav">
+				<div class="p-header__list">
+					<a href="#about" class="p-header_link">導入事例</a>
+				</div>
+				<div class="p-header__list">
+					<a href="#how-to-use" class="p-header_link">機能紹介</a>
+				</div>
+				<div class="p-header__list">
+					<a href="#merit" class="p-header_link">料金システム</a>
+				</div>
+				<div class="p-header__list">
+					<a href="#merit" class="p-header_link">よくある質問</a>
+				</div>
+				<div class="p-header__list">
+					<a href="#merit" class="p-header_link"> 会社概要</a>
+				</div>
+				<div class="p-header__list">
+					<div class="p-header__bar"></div>
+				</div>
+				<div class="p-header__list">
+					<a href="#merit" class="p-header_link p-header__loginlink">ログイン</a>
+				</div>
+
+				<button class="p-header__button">
+					<a href="#contact" class="c-button c-button--accent">無料アカウント登録</a>
+				</button>
+			</nav>
+			<!-- ハンバーガーメニュー -->
+			<button id="js-drawer-icon" class="p-drawer-icon">
+				<span class="p-drawer-icon_bar"></span>
+				<span class="p-drawer-icon_bar"></span>
+			</button>
+		</div>
+	</header>
+
+	<div id="js-drawer-content" class="p-drawer-content">
+		<div class="p-drawer__body">
+			<nav class="p-drawer-content_menu">
+				<a href="#about" class="p-drawer-content_link">TOP</a>
+				<a href="#how-to-use" class="p-drawer-content_link">導入事例</a>
+				<a href="#merit" class="p-drawer-content_link">機能紹介</a>
+				<a href="#merit" class="p-drawer-content_link">料金システム</a>
+				<a href="#merit" class="p-drawer-content_link">よくある質問</a>
+				<a href="#merit" class="p-drawer-content_link">会社概要</a>
+				<a href="#contact" class="p-drawer-content_link p-header__loginlink">ログイン</a>
+			</nav>
+			<div class="p-drawer-button">
+				<button class="c-button c-button--100 c-button__border--b c-button--accent">
+					<div class="c-button__circle u-background--b">
+						<img src="./img/people.svg" alt="" />
+					</div>
+					<div class="c-button__title">無料アカウント登録をする</div>
+				</button>
+				<a href="#contact">
+					<button class="c-button c-button--100 c-button__border--m c-button--base">
+						<div class="c-button__circle u-background--m">
+							<img src="./img/mail.svg" alt="" />
+						</div>
+						<div class="c-button__title">ビジネスプランを問い合わせる</div>
+					</button></a>
+			</div>
+		</div>
+	</div>
+
+	<main class="l-main">
+		<div class="p-mv">
+			<div class="p-mv__inner">
+				<div class="p-mv__content">
+					<div class="p-mv__box">
+						<p class="p-mv__title">
+							ビジネス成長の<br />
+							最強パートナーに<span>AI</span>を。
+						</p>
+						<p class="p-mv__text">
+							関連特許取得済みのAIエージェント機能を搭載した、<br class="u-hidden-sp" />業務改善やAI活用人材育成のサポートシステム
+						</p>
+					</div>
+					<div class="p-mv__image">
+						<img src="./img/concept.png" alt="コンセプトについての画像" />
+					</div>
+				</div>
+				<div class="p-mv__button">
+					<div class="c-button c-button--100 c-button__border--b c-button--accent">
+						<div class="c-button__circle u-background--b">
+							<img src="./img/people.svg" alt="" />
+						</div>
+						<div class="c-button__title">無料アカウント登録をする</div>
+					</div>
+					<a href="#contact">
+						<div class="c-button c-button--100 c-button__border--m c-button--base">
+							<div class="c-button__circle u-background--m">
+								<img src="./img/mail.svg" alt="" />
+							</div>
+							<div class="c-button__title">ビジネスプランを問い合わせる</div>
+						</div>
+					</a>
+				</div>
+				<form class="p-mv__form">
+					<div class="p-mv__fields">
+						<div class="p-mv-field__contents">
+							<div class="p-mv__field__content">
+								<div class="p-mv__field p-mv-field">
+									<div class="p-mv-field__head">
+										<label for="your-email" class="p-mv-field__label">メールアドレス</label>
+									</div>
+									<div class="p-mv-field__item">
+										<input type="email" name="your-email" id="your-email" placeholder="sample@ sample.com" class="p-mv-field__text" />
+									</div>
+								</div>
+								<div class="p-mv__field p-mv-filed">
+									<div class="p-mv-field__head">
+										<label for="your-password" class="p-mv-field__label">パスワード</label>
+									</div>
+									<div class="p-mv-field__item">
+										<input type="password" name="your-password" id="your-password" placeholder="sample@ sample.com" class="p-mv-field__text" />
+									</div>
+								</div>
+								<div class="p-mv__field p-mv-filed">
+									<div class="p-mv-field__head">
+										<label for="your-password2" class="p-mv-field__label">確認用パスワード</label>
+									</div>
+									<div class="p-mv-field__item">
+										<input type="password" name="your-password2" id="your-password2" placeholder="" class="p-mv-field__text" />
+									</div>
+								</div>
+							</div>
+							<!-- プライバシーポリシーに同意する -->
+							<div class="p-mv-field__privacy">
+								<label class="p-mv-field__checkbox">
+									<input type="checkbox" name="your-privacy" class="p-mv-field__checkbox-input" />
+									<span class="p-mv-field__checkbox-text">
+										<a href="" target="_blank"> 利用規約</a>と<a href="" target="_blank">プライバシーポリシー</a>に同意します
+									</span>
+								</label>
+							</div>
+
+							<div class="p-mv__button--48 c-button c-button--100 c-button--accent">
+								<div class="c-button__circle u-background--b">
+									<img src="./img/people.svg" alt="" />
+								</div>
+								<div class="c-button__title">無料アカウント登録をする</div>
+							</div>
+						</div>
+						<p class="p-mv-field__comment">or</p>
+						<a href="#contact">
+							<div class="p-mv__button--48 c-button c-button--100 c-button__border--m c-button--base">
+								<div class="c-button__circle u-background--m">
+									<img src="./img/mail.svg" alt="" />
+								</div>
+								<div class="c-button__title">
+									ビジネスプランを問い合わせる
+								</div>
+							</div>
+						</a>
+					</div>
+				</form>
+			</div>
+			<div class="p-mv__box2--sp">
+				<div class="p-mv__list-title">AI活用のこんな課題を解決します</div>
+				<ul class="p-mv__lists">
+					<li class="p-mv__list">AI活用に関する知識/人材不足</li>
+					<li class="p-mv__list">効果的なAI活用で業務改善したい</li>
+					<li class="p-mv__list">AI活用でビジネスを成長させたい</li>
+				</ul>
+			</div>
+			<div class="p-mv__content2">
+				<div class="p-mv__logo">
+					<img src="./img/logo_black_tate.png" alt="" />
+				</div>
+				<div class="p-mv__box2">
+					<div class="p-mv__list-title">AI活用のこんな課題を解決します</div>
+					<ul class="p-mv__lists">
+						<li class="p-mv__list">AI活用に関する知識/人材不足</li>
+						<li class="p-mv__list">効果的なAI活用で業務改善したい</li>
+						<li class="p-mv__list">AI活用でビジネスを成長させたい</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section id="reason" class="l-reason">
+		<div class="p-reason">
+			<h2 class="c-title">
+				<span class="c-title__en animated__colorBox">Reason</span>
+				<span class="c-title__ja animated__colorBox">選ばれる３つの理由</span>
+			</h2>
+			<div class="p-reason__inner">
+				<div class="p-reason__contents">
+					<div class="p-reason-card animated__slideIn--right">
+						<picture class="p-reason-card__image">
+							<source media="(min-width: 870px)" srcset="./img/reason1.png" />
+							<img src="./img/sp/reason1.png" alt="" />
+						</picture>
+						<div class="p-reason-card__message">
+							<div class="p-reason-card__head">
+								<div class="p-reason-card__no">Reason 01</div>
+								<h3 class="p-reason-card__title">
+									AI活用の最新情報を無料で閲覧可能！
+								</h3>
+							</div>
+							<div class="p-reason-card__line"></div>
+							<p class="p-reason-card__text">
+								AIソリューションは進歩と陳腐化が激しく、最新情報をキャッチアップできることが重要です。本サービスで分散している情報収集を一元管理可能なため、登録して頂くだけで一定のAIリテラシーが身につきます。<br />
+								また、わたしたちのチームには、グローバルで優秀なR&amp;Dチームと、熟練したプロダクト開発チームがいるため、常にプロダクトをアップデートできる体制が整っています。
+							</p>
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="p-reason-card animated__slideIn--left">
+						<picture class="p-reason-card__image p-reason-card__image2">
+							<source media="(min-width: 870px)" srcset="./img/reason2.png" />
+							<img src="./img/sp/reason2.png" alt="" />
+						</picture>
+						<div class="p-reason-card__message">
+							<div class="p-reason-card__head">
+								<div class="p-reason-card__no">Reason 02</div>
+								<h3 class="p-reason-card__title">
+									AIエージェントによる業務改善サポートが受けられる！
+								</h3>
+							</div>
+							<div class="p-reason-card__line"></div>
+							<p class="p-reason-card__text">
+								AIエージェントとは、与えられたゴールに対して、LLMモデル（chatGPT-4やClaude2など）を用いて自立的に動作するソフトウェアのことです。ドキュメント作成支援や、議事録の文字起こしと要約、自身のジョブ（スキル）の棚卸しなど、あなたの最強パートナーとして業務をサポートしてくれます。入力した情報が学習に使われることはなく、セキュリティ面でも安心です。
+							</p>
+						</div>
+					</div>
+					<!-- 3 -->
+					<div class="p-reason-card animated__slideIn--right">
+						<picture class="p-reason-card__image">
+							<source media="(min-width: 870px)" srcset="./img/reason3.png" />
+							<img src="./img/sp/reason3.png" alt="" />
+						</picture>
+						<div class="p-reason-card__message">
+							<div class="p-reason-card__head">
+								<div class="p-reason-card__no">Reason 03</div>
+								<h3 class="p-reason-card__title">
+									AI活用人材を育成する教育体制が整っている！
+								</h3>
+							</div>
+							<div class="p-reason-card__line"></div>
+							<p class="p-reason-card__text">
+								AIはパートナーであり、まずは理解することが重要です。わたしたちは、生成AIをはじめとする研修プログラムを1,000以上保有しており、業務改善コンサルティングで、業務課題解決に繋がるAIソリューションの提案やレクチャーを行っています。<br />
+								AIの根幹から学び、業務に応用できる教育体制を持っています。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="pickup" class="l-pickup">
+		<div class="p-pickup">
+			<div class="p-pickup__inner">
+				<h2 class="c-title">
+					<span class="c-title__en u-color--b animated__colorBox">Pick Up</span>
+					<span class="c-title__ja u-color--b animated__colorBox">導入事例</span>
+				</h2>
+
+				<div class="p-pickup__slider">
+					<!-- Slider main container -->
+					<div id="js-pickup-swiper" class="swiper p-pickup__swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper p-pickup__wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide p-pickup__slide swiper-slide-prev">
+								<!-- 1 -->
+								<div class="p-pickup-card">
+									<div class="p-pickup-card__image">
+										<img src="./img/pickup1.png" alt="">
+									</div>
+									<div class="p-pickup-card__com">株式会社〇〇〇〇</div>
+									<div class="p-pickup-card__text">
+										TaskMentorAIを導入して以来、業務の合理化とスキル向上が進み、社員たちはより満足度の高い仕事ができています。特にAIエージェントのサポートは頼りになります。
+									</div>
+								</div>
+								<!-- end -->
+							</div>
+							<div class="swiper-slide p-pickup__slide swiper-slide-active">
+								<!-- 2 -->
+								<div class="p-pickup-card">
+									<div class="p-pickup-card__image">
+										<img src="./img/pickup2.png" alt="">
+									</div>
+									<div class="p-pickup-card__com">〇〇大学〇〇研究室</div>
+									<div class="p-pickup-card__text">
+										TaskMentorAIの導入により、教職員がAIエージェントを利用して、教育研究業務の効率向上しました。また、学内のAIリテラシーも向上しました。
+									</div>
+								</div>
+								<!-- end -->
+							</div>
+							<div class="swiper-slide p-pickup__slide swiper-slide-next">
+								<!-- 3 -->
+								<div class="p-pickup-card">
+									<div class="p-pickup-card__image">
+										<img src="./img/pickup3.png" alt="">
+									</div>
+									<div class="p-pickup-card__com">株式会社〇〇〇〇</div>
+									<div class="p-pickup-card__text">
+										情報の一元管理とAIエージェントの質の高さに驚いています。ビジネスの未来に向けて頼りになるパートナーです。
+									</div>
+								</div>
+								<!-- end -->
+							</div>
+							<div class="swiper-slide p-pickup__slide">
+								<!-- 4 -->
+								<div class="p-pickup-card">
+									<div class="p-pickup-card__image">
+										<img src="./img/pickup4.png" alt="">
+									</div>
+									<div class="p-pickup-card__com">株式会社〇〇〇〇</div>
+									<div class="p-pickup-card__text">
+										WA2の導入により、当社の技術者たちは最先端の知識を手に入れ、プロジェクトの成功に向けてよりスムーズに作業できるようになりました。当社に必須のツールです。
+									</div>
+								</div>
+								<!-- end -->
+							</div>
+						</div>
+						<div id="js-pickup-pagination" class="swiper-pagination p-pickup__pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+					<!-- If we need navigation buttons -->
+					<div id="js-pickup-swiper__prev" class="swiper-button-prev p-pickup__prev"></div>
+					<div id="js-pickup-swiper__next" class="swiper-button-next p-pickup__next"></div>
+				</div>
+				<!-- If we need pagination -->
+			</div>
+		</div>
+	</section>
+
+	<div class="l-cta">
+		<div class="p-cta">
+			<div class="p-cta__image imageWrapper">
+				<div class="imageInner">
+					<img class="scrollingImage" src="./img/logo_yoko_white.png" alt="" />
+					<img class="scrollingImage" src="./img/logo_yoko_white.png" alt="" />
+					<img class="scrollingImage" src="./img/logo_yoko_white.png" alt="" />
+				</div>
+			</div>
+			<div class="l-inner">
+				<div class="p-cta__flex">
+					<div class="p-cta1">
+						<p class="p-cta1__text1">
+							＼1分で登録完了！／<br />
+							AI活用の最新情報を取得！
+						</p>
+						<div class="p-cta1__button c-button c-button--100 c-button--accent">
+							<div class="c-button__circle u-background--b">
+								<img src="./img/people.svg" alt="" />
+							</div>
+							<div class="c-button__title">無料アカウント登録をする</div>
+						</div>
+					</div>
+					<div class="p-cta1">
+						<p class="p-cta1__text1 p-cta1__text2">
+							弊社が提供する生成AI研修のカリキュラム<br />
+							（180ページ分）とAI活用事例集をプレゼント！
+						</p>
+						<a href="#contact" class="p-cta1__button c-button c-button--100 c-button--base">
+							<div class="c-button__circle u-background--m">
+								<img src="./img/mail.svg" alt="" />
+							</div>
+							<div class="c-button__title">
+								ビジネスプランを問い合わせる
+							</div>
+						</a>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section id="function" class="l-function">
+		<div class="p-function">
+			<h2 class="c-title">
+				<span class="c-title__en animated__colorBox">Function</span>
+				<span class="c-title__ja animated__colorBox">TaskMentorAIの7つの機能</span>
+			</h2>
+			<div class="l-inner">
+				<div class="p-function__boxes">
+					<!-- 1 -->
+					<div class="p-function-box animated__fadeIn --delay0">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon1.svg" alt="">
+							<p class="p-function-box__title">AI Tips機能</p>
+						</div>
+						<p class="p-function-box__text">
+							最新のAIやTech情報、活用事例、Tipsを閲覧可能です。弊社チームが日々情報収集と検証を行なっており、AI専門家がコメントをした上での情報を受け取れます。
+						</p>
+					</div>
+					<!-- end -->
+					<!-- 2 -->
+					<div class="p-function-box animated__fadeIn --delay1">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon2.svg" alt="">
+							<p class="p-function-box__title">AI/ITツール検索機能</p>
+						</div>
+						<p class="p-function-box__text">
+							日々進化するAI/ITツール情報を整理し、まとめています。あなたの業務や課題に合ったAI/ITツールを検索することがができます。
+						</p>
+					</div>
+					<!-- end -->
+					<!-- 3 -->
+					<div class="p-function-box animated__fadeIn --delay2">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon3.svg" alt="">
+							<p class="p-function-box__title">AIエージェント機能</p>
+						</div>
+						<p class="p-function-box__text">
+							常にアップデートされるLLMモデル（chatGPT-4やClaude2など）を利用可能です。<br>
+							「ドキュメント作成支援」「会議録データ整理」「データ分析」「ジョブ診断」など、あなたの仕事をサーポートするエージェント機能を使用することができます。
+						</p>
+					</div>
+					<!-- end -->
+					<!-- 4 -->
+					<div class="p-function-box animated__fadeIn --delay3">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon4.svg" alt="">
+							<p class="p-function-box__title">プロンプト設定機能</p>
+						</div>
+						<p class="p-function-box__text">
+							プロンプトとは、生成AIに指示を出すときのフォーマットで、よく使うプロンプトを設定することはもちろん、おすすめのプロンプトを利用することが可能です。<br>
+							いつでもエージェント機能から呼び出すことができます。
+						</p>
+					</div>
+					<!-- end -->
+					<!-- 5 -->
+					<div class="p-function-box animated__fadeIn --delay4">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon5.svg" alt="">
+							<p class="p-function-box__title">ロール設定機能</p>
+						</div>
+						<p class="p-function-box__text">
+							コンサルタントやWebマーケター、コーチなど、あなたが希望するエージェントの役割（ロール）を設定することが可能です。設定されたエージェントロールによりサポートの内容が変わります。
+						</p>
+					</div>
+					<!-- end -->
+					<!-- 6 -->
+					<div class="p-function-box animated__fadeIn --delay5">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon6.svg" alt="">
+							<p class="p-function-box__title">
+								AI業務改善提案機能<br>
+								（AI-OJT機能）
+							</p>
+						</div>
+						<p class="p-function-box__text">
+							業務課題を登録すると、AIが課題の内容を分析し、解決ソリューションを提案します。
+						</p>
+					</div>
+					<!-- end -->
+					<!-- 7 -->
+					<div class="p-function-box animated__fadeIn --delay6">
+						<div class="p-function-box__title-box">
+							<img src="./img/icon7.svg" alt="">
+							<p class="p-function-box__title">チーム機能</p>
+						</div>
+						<p class="p-function-box__text">
+							個人利用ではなく、チーム管理を行うことができます。管理者は、ダッシュボードからチームの業務改善状況や、エージェント利用状況を確認することができます。
+						</p>
+					</div>
+					<!-- end -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="price" class="l-price">
+		<div class="p-price">
+			<h2 class="c-title">
+				<span class="c-title__en animated__colorBox">Price</span>
+				<span class="c-title__ja animated__colorBox">料金システム</span>
+			</h2>
+			<div id="js-price-scroll" class="p-price__scrolldown">
+				<span>SCROLL</span>
+			</div>
+			<div class="p-price__content">
+				<table class="p-price-box">
+					<thead>
+						<tr>
+							<th></th>
+							<th>
+								<div class="p-price-box__box">
+									<p class="p-price-box__text">
+										<span class="p-price-box__text--ja">フリープラン</span>
+										<span class="p-price-box__text--en">Free</span>
+									</p>
+									<p class="p-price-box__text2">
+										最新のAI技術や、AIツール、AIの活用方法に関する情報を取得したい方向け
+									</p>
+									<div class="p-price-box__amt"><span>￥</span> 0</div>
+									<a href="" class="p-price-box__button c-button c-button--accent">無料で始める</a>
+								</div>
+							</th>
+							<th>
+								<div class="p-price-box__box">
+									<p class="p-price-box__text">
+										<span class="p-price-box__text--ja">パーソナルプラン</span>
+										<span class="p-price-box__text--en">Personal</span>
+									</p>
+									<p class="p-price-box__text2">
+										個人で最新のLLMモデル（chatGPT-4等）利用、AI活用で業務効率化をしたい方向け
+									</p>
+									<div class="p-price-box__amt">
+										<span>月額￥</span>980<span>/1ID</span>
+									</div>
+									<a href="" class="p-price-box__button c-button c-button--base-border-accent">今すぐ始める</a>
+								</div>
+							</th>
+							<th>
+								<div class="p-price-box__box">
+									<p class="p-price-box__text">
+										<span class="p-price-box__text--ja">ビジネスチームプラン</span>
+										<span class="p-price-box__text--en">Business Team</span>
+									</p>
+									<p class="p-price-box__text2">
+										チームでAIを活用して業務改善を行いたい方向け
+									</p>
+									<div class="p-price-box__text--ja p-price-box__text--padding">
+										お問い合わせ<br>ください
+									</div>
+									<a href="" class="p-price-box__button c-button c-button--base-border-accent">問い合わせる</a>
+								</div>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>AI Tips機能</th>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+						<tr>
+							<th>AI/ITツール検索機能</th>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+						<tr>
+							<th>AIエージェント機能</th>
+							<td></td>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+						<tr>
+							<th>プロンプト設定機能</th>
+							<td></td>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+						<tr>
+							<th>ロール設定機能</th>
+							<td></td>
+							<td><img src="./img/check.svg" alt=""></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+						<tr>
+							<th>
+								AI業務改善提案機能<br class="u-hidden--pc">
+								(AI-OJT機能)
+							</th>
+							<td></td>
+							<td></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+						<tr>
+							<th>チーム機能</th>
+							<td></td>
+							<td></td>
+							<td><img src="./img/check.svg" alt=""></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="p-price__message">
+				<p class="p-price__message-title">ビジネスチームプランについて</p>
+				<p class="p-price__message-text">
+					・お問い合わせ頂いた方には、弊社が提供する<span>生成AI研修のカリキュラム一部（180ページ分）とAI活用事例集をプレゼント！</span>
+				</p>
+				<p class="p-price__message-text">
+					※弊社が提供する生成AI活用研修（SEC-AI）、およびAI業務改善（AI-OJT）と併用することで、更にお得に利用することが可能となります。
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="question" class="l-question">
+		<div class="p-question">
+			<h2 class="c-title">
+				<span class="c-title__en animated__colorBox">Question</span>
+				<span class="c-title__ja animated__colorBox">よくある質問</span>
+			</h2>
+			<div class="p-question__content">
+				<!-- 1 -->
+				<div class="p-question-card">
+					<div class="p-question-card__head js-accordion">
+						<p class="p-question-card__head-icon">Q.</p>
+						<p class="p-question-card__head-text">
+							社内GPT構築サービスと類似したサービスですか？
+						</p>
+						<div class="p-question-card__head-sign">
+							<div class="p-question-card__head-sign-bar"></div>
+							<div class="p-question-card__head-sign-bar"></div>
+						</div>
+					</div>
+					<div class="p-question-card__bar u-hidden--sp"></div>
+					<div class="p-question-card__body">
+						<div class="p-question-card__body-a">
+							<p class="p-question-card__body-icon">A.</p>
+							<p class="p-question-card__body-text">
+								類似点はありますが、コンセプトが異なります。わたしたちは、AI活用人材の普及に主眼をおいており、「教育」の重要性を理解しています。そのため、本サービスを活用することで、AIの理解が深まり、自身でAIをマネジメントできる人材になって頂きたいと考えています。
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+				<!-- 2 -->
+				<div class="p-question-card">
+					<div class="p-question-card__head js-accordion">
+						<p class="p-question-card__head-icon">Q.</p>
+						<p class="p-question-card__head-text">
+							AIエージェントで使えるLLMモデルを教えてください。
+						</p>
+						<div class="p-question-card__head-sign">
+							<div class="p-question-card__head-sign-bar"></div>
+							<div class="p-question-card__head-sign-bar"></div>
+						</div>
+					</div>
+					<div class="p-question-card__bar u-hidden--sp"></div>
+					<div class="p-question-card__body">
+						<div class="p-question-card__body-a">
+							<p class="p-question-card__body-icon">A.</p>
+							<p class="p-question-card__body-text">
+								現在は、GPT-3.5、GPT-4を利用することが可能です。また、OpenInterpriter機能を搭載しているため、データ分析も可能です。今後、利用シーンに合わせたLLMモデルの最適化を行っていくため、Claude2、GPT-4V、PaLM2、Lamaなども対応していく可能性があります。
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+				<!-- 3 -->
+				<div class="p-question-card">
+					<div class="p-question-card__head js-accordion">
+						<p class="p-question-card__head-icon">Q.</p>
+						<p class="p-question-card__head-text">
+							AIエージェントで入力した情報は学習に使われますか？
+						</p>
+						<div class="p-question-card__head-sign">
+							<div class="p-question-card__head-sign-bar"></div>
+							<div class="p-question-card__head-sign-bar"></div>
+						</div>
+					</div>
+					<div class="p-question-card__bar u-hidden--sp"></div>
+					<div class="p-question-card__body">
+						<div class="p-question-card__body-a">
+							<p class="p-question-card__body-icon">A.</p>
+							<p class="p-question-card__body-text">
+								使われません。AzureOpenAIサービスを利用しているため、学習データとして使われることはありません。また、他のLLMモデルに関しても学習されないモデルのみを利用します。
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+				<!-- 4 -->
+				<div class="p-question-card">
+					<div class="p-question-card__head js-accordion">
+						<p class="p-question-card__head-icon">Q.</p>
+						<p class="p-question-card__head-text">
+							フリープランに登録した後に、パーソナルプランやビジネスチームプランにアップグレード可能ですか？
+						</p>
+						<div class="p-question-card__head-sign">
+							<div class="p-question-card__head-sign-bar"></div>
+							<div class="p-question-card__head-sign-bar"></div>
+						</div>
+					</div>
+					<div class="p-question-card__bar u-hidden--sp"></div>
+					<div class="p-question-card__body">
+						<div class="p-question-card__body-a">
+							<p class="p-question-card__body-icon">A.</p>
+							<p class="p-question-card__body-text">
+								可能です。パーソナルプランは、マイページからアップグレード可能です。ビジネスチームプランはワークスペース管理になるため、管理者からの招待を受ける必要がありますが、既存アカウントと紐づけすることができます。
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+				<!-- 5 -->
+				<div class="p-question-card">
+					<div class="p-question-card__head js-accordion">
+						<p class="p-question-card__head-icon">Q.</p>
+						<p class="p-question-card__head-text">
+							企業で導入を考えています。研修や業務改善サポートも行っていただくことは可能ですか？
+						</p>
+						<div class="p-question-card__head-sign">
+							<div class="p-question-card__head-sign-bar"></div>
+							<div class="p-question-card__head-sign-bar"></div>
+						</div>
+					</div>
+					<div class="p-question-card__bar u-hidden--sp"></div>
+					<div class="p-question-card__body">
+						<div class="p-question-card__body-a">
+							<p class="p-question-card__body-icon">A.</p>
+							<p class="p-question-card__body-text">
+								可能です。ビジネスチームプランの問い合わせフォームからご連絡ください。生成AI活用を含む1,000を超える学習プログラムと、AI業務改善（AI-OJT）のハンズオンレクチャーも行っております。まずは、お問い合わせください。
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end -->
+			</div>
+		</div>
+	</section>
+
+	<div class="l-cta">
+		<div class="p-cta">
+			<div class="p-cta__image imageWrapper">
+				<div class="imageInner">
+					<img class="scrollingImage" src="./img/logo_yoko_white.png" alt="" />
+					<img class="scrollingImage" src="./img/logo_yoko_white.png" alt="" />
+					<img class="scrollingImage" src="./img/logo_yoko_white.png" alt="" />
+				</div>
+			</div>
+			<div class="l-inner">
+				<div class="p-cta__flex">
+					<div class="p-cta1">
+						<p class="p-cta1__text1">
+							＼1分で登録完了！／<br />
+							AI活用の最新情報を取得！
+						</p>
+						<div class="p-cta1__button c-button c-button--100 c-button--accent">
+							<div class="c-button__circle u-background--b">
+								<img src="./img/people.svg" alt="" />
+							</div>
+							<div class="c-button__title">無料アカウント登録をする</div>
+						</div>
+					</div>
+					<div class="p-cta1">
+						<p class="p-cta1__text1 p-cta1__text2">
+							弊社が提供する生成AI研修のカリキュラム<br />
+							（180ページ分）とAI活用事例集をプレゼント！
+						</p>
+						<a href="#contact" class="p-cta1__button c-button c-button--100 c-button--base">
+							<div class="c-button__circle u-background--m">
+								<img src="./img/mail.svg" alt="" />
+							</div>
+							<div class="c-button__title">
+								ビジネスプランを問い合わせる
+							</div>
+						</a>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="l-vision">
+		<div id="vision" class="p-vision">
+			<h2 class="c-title">
+				<span class="c-title__en animated__colorBox">Vision</span>
+				<span class="c-title__ja animated__colorBox">わたしたちの想い</span>
+			</h2>
+			<div class="p-vision__contents">
+				<!-- 1 -->
+				<div class="p-vision-card animated__slideIn--left">
+					<picture class="p-vision-card__image">
+						<source media="(min-width: 870px)" srcset="./img/vision1.png">
+						<img src="./img/sp/vision1.png" alt="">
+					</picture>
+					<div class="p-vision-card__message">
+						<div class="p-vision-card__title">
+							AIの民主化。<br>
+							"作る"AIから、"使う"AIへ
+						</div>
+						<div class="p-vision-card__description">
+							<div class="p-vision-card__text">
+								弊社がAI事業をスタートしたのは2015年、第3次AIブームが少し経過した頃です。<br>
+								自然言語処理を中心としたAIチャットボット開発を手掛けており、補助金などを活用した自社プロダクト開発を目指しましたが、鳴かず飛ばずで終了。その後は、システムインテグレーションを中心に事業を展開していました。
+							</div>
+							<div class="p-vision-card__text">
+								そして今回の生成AIブームで、改めてAI事業にコミット。
+							</div>
+							<div class="p-vision-card__text">
+								今までは、AIの開発が主流であったため、資金力のある企業しかチャレンジできませんでした。しかし、生成AIの登場によりAIが民主化。その結果、中小企業はもちろんのこと個人でもAIを使用する時代になりました。
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 2 -->
+				<div class="p-vision-card p-vision-card--reverse animated__slideIn--right">
+					<picture class="p-vision-card__image">
+						<source media="(min-width: 870px)" srcset="./img/vision2.png">
+						<img src="./img/sp/vision2.png" alt="">
+					</picture>
+					<div class="p-vision-card__message">
+						<div class="p-vision-card__title">
+							プロダクト名に込められた想い
+						</div>
+						<div class="p-vision-card__description">
+							<div class="p-vision-card__text">
+								AI業界では、ゴールに向かって自律的に動作するエージェントAIが注目されており、このプロダクトには、仕事を自動化・効率化していくためのエージェントAIを搭載しています。<br>
+								しかし、すべてをAIに任せるのではなく、人とAIが協力して業務を行っていくことが重要です。
+							</div>
+							<div class="p-vision-card__text">
+								そのため、AI活用を促進させる情報やTips（ヒント）の提供、研修によるサポートでAI活用人材を育成しつつ、エージェントAIを活用して業務上のタスクに対するアドバイスや支援を行います。TaskMentorAI（タスクメンターエーアイ）をビジネスの最強のパートナーとして使いこなしていただき、業務改善やビジネスの成長に繋げていただきたいと考えています。
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="p-vision-card animated__slideIn--left">
+					<picture class="p-vision-card__image">
+						<source media="(min-width: 870px)" srcset="./img/vision3.png">
+						<img src="./img/sp/vision3.png" alt="">
+					</picture>
+					<div class="p-vision-card__message">
+						<div class="p-vision-card__title">未来の働き方を、AIと共に。</div>
+						<div class="p-vision-card__description">
+							<div class="p-vision-card__text p-vision-card__text2">
+								現在の課題は、AIの"活用方法"です。<br>
+								たくさんのAIソリューションが登場する中で、多くの人はビジネスへの活かし方がわかっていません。
+							</div>
+							<div class="p-vision-card__text p-vision-card__text2">
+								わたしたちは、AIソリューションを紹介するだけではなく、使い方やレクチャーを行う事業もスタートしており、AI活用人材を増やしています。それらのナレッジを本プロダクトに詰め込んで、みなさんに届けたいと考えています。
+							</div>
+							<div class="p-vision-card__text p-vision-card__text2">
+								わたしたちは「日本が世界で最もAIを活用している」と言われる、そんな世界を目指します。
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="company" class="l-company">
+		<div class="p-company">
+			<h2 class="c-title u-color--b">
+				<span class="c-title__en ">Company</span>
+				<span class="c-title__ja ">運営会社情報</span>
+			</h2>
+			<div class="p-company__contents">
+				<div class="p-company-card">
+					<p class="p-company-card__title">商号</p>
+					<p class="p-company-card__text">
+						株式会社AROUTECH（アルーテック）（英名：AROUTECH. Co.,Ltd.）
+					</p>
+				</div>
+				<div class="p-company-card">
+					<p class="p-company-card__title p-company-card__title2">所在地</p>
+					<div class="p-company-card_column">
+						<p class="p-company-card__text">
+							本社<br>
+							〒123-4567　東京都港区テックビル1-2-3　技術町 Tech Town
+						</p>
+						<p class="p-company-card__text">
+							バングラデシュ支社（Web3・メタバース研究、プロダクト開発拠点）<br>
+							123 Tech Lane, Innovation City Cyberburg, CB 56789 Techtopia
+						</p>
+					</div>
+				</div>
+				<div class="p-company-card">
+					<p class="p-company-card__title">設立</p>
+					<p class="p-company-card__text">2013年9月26日</p>
+				</div>
+				<div class="p-company-card">
+					<p class="p-company-card__title">資本金</p>
+					<p class="p-company-card__text">20,000,000円</p>
+				</div>
+				<div class="p-company-card">
+					<p class="p-company-card__title">URL</p>
+					<p class="p-company-card__text">https://www.aroutech.ccom</p>
+				</div>
+				<div class="p-company-card">
+					<p class="p-company-card__title">役員</p>
+					<div class="p-company-card_column">
+						<div class="p-company-card__row">
+							<p class="p-company-card__text p-company-card__text2 p-company-card__left">
+								代表取締役CEO
+							</p>
+							<p class="p-company-card__text p-company-card__text2">
+								山田 太郎
+							</p>
+						</div>
+						<div class="p-company-card__row">
+							<p class="p-company-card__text p-company-card__text2 p-company-card__left">
+								取締役COO
+							</p>
+							<p class="p-company-card__text p-company-card__text2">
+								佐藤 花子​
+							</p>
+						</div>
+						<div class="p-company-card__row">
+							<p class="p-company-card__text p-company-card__text2 p-company-card__left">
+								執行役員
+							</p>
+							<p class="p-company-card__text p-company-card__text2">
+								鈴木 一郎
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="p-company-card">
+					<p class="p-company-card__title">事業内容</p>
+					<p class="p-company-card__text">
+						AIインテグレーション事業<br>
+						Webインテグレーション事業<br>
+						AI研究／プロダクト開発事業
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="l-contact">
+		<div class="p-contact">
+			<h2 class="c-title">
+				<span class="c-title__en animated__colorBox">Contact</span>
+				<span class="c-title__ja animated__colorBox">お問い合わせ</span>
+			</h2>
+			<form class="p-contact__contents">
+				<p class="p-contact__text">
+					この度は、TaskMentorAIサービスご案内ページをご覧いただきありがとうございます。<br>
+					必要事項を記入の上、フォームを送信してください。
+				</p>
+				<div class="p-contact__form">
+					<!-- お問い合わせ種別 -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-type" class="p-contact-input__title">お問い合わせ種別</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<select name="your-type" id="your-type" class="p-contact-input__select required" placeholder="選択してください">
+								<option value="0" disabled="" selected="">選択してください</option>
+								<option value="1">お問い合わせ</option>
+								<option value="2">ビジネスチームプランのお申し込み</option>
+								<option value="3">その他</option>
+							</select>
+						</div>
+					</div>
+					<!-- end -->
+					<!-- お名前 -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-name" class="p-contact-input__title">お名前</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<input type="text" name="your-name" id="your-name" class="p-contact-input__text required" placeholder="山田　太郎">
+						</div>
+					</div>
+					<!-- end -->
+					<!-- 会社名 -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-company" class="p-contact-input__title">会社名</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<input type="text" name="your-company" id="your-company" class="p-contact-input__text required">
+						</div>
+					</div>
+					<!-- end -->
+					<!-- 担当部署 -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-dept" class="p-contact-input__title">担当部署</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<input type="text" name="your-dept" id="your-dept" class="p-contact-input__text required">
+						</div>
+					</div>
+					<!-- end -->
+					<!-- eメール -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-email" class="p-contact-input__title">Eメール</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<input type="email" name="your-email" id="your-email" class="p-contact-input__text required" placeholder="example@example.ne.jp">
+						</div>
+					</div>
+					<!-- end -->
+					<!-- 電話番号 -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-tel" class="p-contact-input__title">電話番号</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<input type="text" name="your-tel" id="your-tel" class="p-contact-input__text required" placeholder="0123456789">
+						</div>
+					</div>
+					<!-- end -->
+					<!-- お問い合わせ内容 -->
+					<div class="p-contact-input">
+						<div class="p-contact-input__head">
+							<span class="p-contact-input__tag">必須</span>
+							<label for="your-detail" class="p-contact-input__title">お問い合わせ内容</label>
+							<!-- <span class="p-contact-input__invalid">※入力してください</span> -->
+						</div>
+						<div class="p-contact-input__body">
+							<textarea name="your-detail" id="your-detail" class="p-contact-input__textarea required"></textarea>
+						</div>
+					</div>
+					<!-- end -->
+				</div>
+				<div class="p-contact__privacy">
+					<p class="p-contact__text">
+						ご記入いただいた個人情報は、お問い合わせに対する回答や業務上の連絡を取る目的のみで使用し、第三者に提供することはございません。
+					</p>
+					<label class="p-contact__checkbox">
+						<input type="checkbox" name="your-privacy" class="p-contact__checkbox-input" required="">
+						<span class="p-contact__checkbox-text">
+							上記を確認し、同意する。
+						</span>
+					</label>
+				</div>
+				<div class="p-contact-input__btn">
+					<input type="submit" value="フォームを送信する" class="c-button c-button--100 c-button--accent p-contact-input__button">
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="l-footer">
+		<div class="p-footer">
+			<div class="p-footer_contents">
+				<div class="p-footer__nav">
+					<ul class="p-footer__lists">
+						<li class="p-footer__list">
+							<a href="#" class="p-footer__link">TOP</a>
+						</li>
+						<li class="p-footer__list">
+							<a href="#function" class="p-footer__link">機能紹介</a>
+						</li>
+						<li class="p-footer__list">
+							<a href="#price" class="p-footer__link">料金システム</a>
+						</li>
+						<li class="p-footer__list">
+							<a href="#question" class="p-footer__link">よくある質問</a>
+						</li>
+						<li class="p-footer__list">
+							<a href="#company" class="p-footer__link">会社情報</a>
+						</li>
+						<li class="p-footer__bar"></li>
+						<li class="p-footer__list">
+							<a href="" class="p-footer__link">ログイン</a>
+						</li>
+					</ul>
+					<ul class="p-footer__lists p-footer__lists--reverse">
+						<li class="p-footer__list">
+							<a href="" class="p-footer__link">プライバシーポリシー</a>
+						</li>
+						<li class="p-footer__list">
+							<a href="" class="p-footer__link">特定商取引法に基づく表示</a>
+						</li>
+						<li class="p-footer__list">©︎2024 AROUTECH. Co.,Ltd.</li>
+					</ul>
+				</div>
+				<div class="p-footer__img">
+					<a href="#"><img src="./img/logo_footer.png" alt=""></a>
+				</div>
+			</div>
+			<p class="p-footer__text">
+				このサイトはアローサル・テクノロジー株式会社様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません
+			</p>
+		</div>
+	</footer>
+
+	<!-- swiperのjs読み込み -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- jQueryの読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<!-- jsの読み込み -->
+	<script src="./js/script.min.js"></script>
+</body>
+
+</html>
